@@ -1,0 +1,5 @@
+print("="*15)
+print("68010968-Paramate")
+print("Lab06-Git and GitHub")
+print("Hello Git!")
+print("="*15)
