@@ -14,8 +14,14 @@ def discount(price, discount_rate):
     return price - discount_amount
 
 def main():
-    price = 158.22
-    VAT = calculate_VAT(price)
+    while True:
+        try:
+            price = float(input("Enter the price of the item: "))
+            break
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
+
+    VAT = calculate_VAT(price)  
     discount_rate = 0.10  # 10% discount
     
     price_after_discount = discount(price, discount_rate)
